@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3BD42D</color>
+    <color name="colorPrimaryDark">#5E49FF</color>
+    <color name="colorAccent">#25CBD3</color>
+    <color name="corPrimaria">#3BD42D</color>
+    <color name="corPrimaria2">#5E49FF</color>
+    <color name="corPrimaria3">#25CBD3</color>
+    <color name="corPrimaria4">#F0F5FF</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza1">#DADADA</color>
+    <color name="cinza2">#7C7786</color>
+    <color name="cinza3">#4D4C4D</color>
+    <color name="cinza4">#333333</color>
+    <color name="cinza0">#F4F4F4</color>
+</resources>
+

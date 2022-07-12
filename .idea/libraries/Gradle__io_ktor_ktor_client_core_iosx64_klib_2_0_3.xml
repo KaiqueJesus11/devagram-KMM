@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-client-core-iosx64:klib:2.0.3" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-core-iosx64/2.0.3/c06872e1cfb8541643bf48d056c46e8a5704db7a/ktor-client-core.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-core-iosx64/2.0.3/c3235201eeae86db486882d6dfc0b76f24f34fb9/ktor-client-core-iosx64-2.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

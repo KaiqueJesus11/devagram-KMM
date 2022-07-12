@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-events-iosarm64:klib:2.0.3" type="kotlin.native">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-events-iosarm64/2.0.3/e314350d6ec8feff2aeeabec2c7bf889309be994/ktor-events.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-events-iosarm64/2.0.3/6f9e35d3a717a23f05afa11b9bad373f1e664114/ktor-events-iosarm64-2.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

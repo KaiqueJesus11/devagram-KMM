@@ -1,0 +1,12 @@
+<resources>
+    <string name="botao_login">Login</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="input_nome">Nome Completo</string>
+    <string name="input_email">Email</string>
+    <string name="input_senha">Senha</string>
+    <string name="input_confirmar_senha">Confirmar Senha</string>
+    <string name="text_nao_possui_conta">Não possui uma conta?</string>
+    <string name="text_ja_possui_conta">Já possui uma conta?</string>
+    <string name="text_faca_cadastro"><u>Faça seu cadastro agora!</u></string>
+    <string name="text_faca_login"><u>Faça seu login agora!</u></string>
+</resources>

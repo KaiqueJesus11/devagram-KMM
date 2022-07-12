@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".activities.LoginActivity">
+    
+    <ImageView
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_heigth"
+        android:src="@drawable/logo"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        ></ImageView>
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/InputStyle"
+        android:layout_marginTop="196dp"
+        android:drawableLeft="@drawable/envelope"
+        android:hint="@string/input_email"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/senha"
+        style="@style/InputStyle"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/key"
+        android:hint="@string/input_senha"
+        android:imeActionLabel="@string/input_senha"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="64dp"
+        android:enabled="true"
+        android:text="@string/botao_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha"/>
+
+    <TextView
+        android:id="@+id/nao_possui_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_nao_possui_conta"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/biennale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/fazer_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_faca_cadastro"
+        android:fontFamily="@font/biennale"
+        android:textColor="@color/corPrimaria2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nao_possui_cadastro"
+        >
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

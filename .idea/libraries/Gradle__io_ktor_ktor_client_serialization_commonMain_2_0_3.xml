@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.ktor:ktor-client-serialization:commonMain:2.0.3" type="kotlin.common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.Devagram/commonMain/implementation/io.ktor-ktor-client-serialization/io.ktor-ktor-client-serialization-commonMain.klib!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-serialization/2.0.3/20389bc3718547396c26187f78825819655adbc/ktor-client-serialization-2.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
