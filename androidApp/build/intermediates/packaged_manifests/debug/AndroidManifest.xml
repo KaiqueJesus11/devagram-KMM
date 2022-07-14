@@ -9,6 +9,7 @@
         android:targetSdkVersion="32" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="false"
@@ -17,6 +18,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.devaria.devagram.android.activities.FeedActivity"
+            android:exported="false" />
         <activity
             android:name="com.devaria.devagram.android.activities.CadastroActivity"
             android:exported="false" />

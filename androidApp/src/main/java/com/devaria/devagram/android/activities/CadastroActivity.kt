@@ -24,6 +24,7 @@ class CadastroActivity : AppCompatActivity() {
     var nome : String = ""
     var email : String = ""
     var senha : String = ""
+    lateinit var avatar: ByteArray
     var confirmacaoSenha : String = ""
     lateinit var botaoCadastrar : Button
     lateinit var tirarFoto : ImageView
@@ -96,7 +97,9 @@ class CadastroActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode == Activity.RESULT_OK && requestCode == REQUEST_CODE && data != null){
-            tirarFoto.setImageBitmap(data.extras?.get("data") as Bitmap)
+            var foto = data.extras?.get("data") as Bitmap
+            avatar = data.extras?.get("data") as ByteArray
+            tirarFoto.setImageBitmap(foto)
         }
     }
 

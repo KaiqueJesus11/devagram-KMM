@@ -1,18 +1,31 @@
 package com.devaria.devagram.android.activities
 
+import android.app.AlertDialog
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.devaria.devagram.android.R
+import com.devaria.devagram.model.Login.Login
+import com.devaria.devagram.model.Login.ResponseErro
+import com.devaria.devagram.model.Login.ResponseSucesso
+import com.devaria.devagram.services.Auth
+import io.ktor.client.call.*
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.launch
+import okhttp3.Response
 
 class LoginActivity : AppCompatActivity() {
     var email : String = ""
     var senha : String = ""
+
+    private val mainScope = MainScope()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +53,23 @@ class LoginActivity : AppCompatActivity() {
         })
 
         botaoLogin.setOnClickListener {
-
+            mainScope.launch {
+                kotlin.runCatching {
+                   Auth().login(Login(email, senha))
+                }.onSuccess {
+                   if(it.status.value >= 400){
+                       val erroData : ResponseErro = it.body()
+                       Log.e("Erro", "Erro: ${erroData.erro}")
+                       showDialog("Erro", "Erro: ${erroData.erro}")
+                   }else{
+                       val authData : ResponseSucesso = it.body()
+                       onLogin(authData)
+                   }
+                }.onFailure {
+                    Log.e("Erro", "Erro: ${it.localizedMessage}")
+                    showDialog("Erro", "Erro: ${it.localizedMessage}")
+                }
+            }
         }
 
         linkFazerCadastro.setOnClickListener {
@@ -48,4 +77,19 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun showDialog(title: String, message: String){
+        val alertDialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this@LoginActivity)
+        alertDialogBuilder.setTitle(title)
+        alertDialogBuilder.setMessage(message)
+        val alertDialog = alertDialogBuilder.create()
+        alertDialog.show()
+    }
+
+    fun onLogin(authData: ResponseSucesso){
+        getSharedPreferences("devagram", Context.MODE_PRIVATE).edit().putString("token", authData.token).apply()
+        val intent: Intent = Intent(this, FeedActivity::class.java)
+        startActivity(intent)
+    }
+
 }

@@ -12,16 +12,20 @@
         "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\font\\biennale_regular.otf"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\font_biennale_bold.otf.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\font\\biennale_bold.otf"
-    },
-    {
         "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\layout_activity_cadastro.xml.flat",
         "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\layout\\activity_cadastro.xml"
     },
     {
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\font_biennale_bold.otf.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\font\\biennale_bold.otf"
+    },
+    {
         "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_key.png.flat",
         "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\key.png"
+    },
+    {
+        "merged": "com.devaria.devagram.android.androidApp-merged_res-19:/layout_activity_feed.xml.flat",
+        "source": "com.devaria.devagram.android.androidApp-main-21:/layout/activity_feed.xml"
     },
     {
         "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_user.png.flat",
@@ -38,10 +42,6 @@
     {
         "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_envelope.png.flat",
         "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\envelope.png"
-    },
-    {
-        "merged": "com.devaria.devagram.android.androidApp-merged_res-19:/layout_activity_cadastro.xml.flat",
-        "source": "com.devaria.devagram.android.androidApp-main-21:/layout/activity_cadastro.xml"
     },
     {
         "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_logo.png.flat",

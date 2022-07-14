@@ -13,48 +13,57 @@
 11    <uses-permission android:name="android.permission.CAMERA" />
 11-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:5:5-65
 11-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:5:22-62
-12
-13    <application
-13-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:7:5-26:19
-14        android:allowBackup="false"
-14-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:8:9-36
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.5.0] C:\Users\Devaria\.gradle\caches\transforms-3\93b2c1d2475c926e9ed35b01b15bad15\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
-16        android:debuggable="true"
-17        android:supportsRtl="true"
-17-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:9:9-35
-18        android:testOnly="true"
-19        android:theme="@style/AppTheme" >
-19-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:10:9-40
-20        <activity
-20-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:11:9-13:40
-21            android:name="com.devaria.devagram.android.activities.CadastroActivity"
-21-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:12:13-56
-22            android:exported="false" />
-22-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:13:13-37
-23        <activity
-23-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:14:9-16:40
-24            android:name="com.devaria.devagram.android.activities.LoginActivity"
-24-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:15:13-53
-25            android:exported="false" />
-25-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:16:13-37
-26        <activity
-26-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:17:9-25:20
-27            android:name="com.devaria.devagram.android.activities.MainActivity"
-27-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:18:13-52
-28            android:exported="true" >
-28-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:19:13-36
-29            <intent-filter>
-29-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:20:13-24:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:21:17-69
-30-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:21:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:23:17-77
-32-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:23:27-74
-33            </intent-filter>
-34        </activity>
-35    </application>
-36
-37</manifest>
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:6:5-67
+12-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:6:22-64
+13
+14    <application
+14-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:8:5-30:19
+15        android:allowBackup="false"
+15-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:9:9-36
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.5.0] C:\Users\Devaria\.gradle\caches\transforms-3\93b2c1d2475c926e9ed35b01b15bad15\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:supportsRtl="true"
+18-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:11:9-40
+21        <activity
+21-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:12:9-14:40
+22            android:name="com.devaria.devagram.android.activities.FeedActivity"
+22-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:13:13-52
+23            android:exported="false" />
+23-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:14:13-37
+24        <activity
+24-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:15:9-17:40
+25            android:name="com.devaria.devagram.android.activities.CadastroActivity"
+25-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:16:13-56
+26            android:exported="false" />
+26-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:17:13-37
+27        <activity
+27-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:18:9-20:40
+28            android:name="com.devaria.devagram.android.activities.LoginActivity"
+28-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:19:13-53
+29            android:exported="false" />
+29-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:20:13-37
+30        <activity
+30-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:21:9-29:20
+31            android:name="com.devaria.devagram.android.activities.MainActivity"
+31-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:22:13-52
+32            android:exported="true" >
+32-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:23:13-36
+33            <intent-filter>
+33-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:24:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:25:17-69
+34-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:27:17-77
+36-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38        </activity>
+39    </application>
+40
+41</manifest>

@@ -3,11 +3,15 @@
     package="com.devaria.devagram.android">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.FeedActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.CadastroActivity"
             android:exported="false" />
