@@ -6,6 +6,7 @@ import io.ktor.client.request.*
 import io.ktor.client.request.forms.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
+import io.ktor.http.content.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 
@@ -35,20 +36,10 @@ class DevagramApiService {
         return response
     }
 
-    suspend private fun api (endpoint: String, metodo: HttpMethod, formData: Any? = null, token: String = "", newHeaders: Headers? = null, isFormData: Boolean = true, imagem: ByteArray? = null, pamerameters : Parameters? = null): HttpResponse {
-        if(isFormData == false){
-            return api(endpoint, metodo, formData, token, newHeaders, pamerameters)
-        }
-
+    suspend private fun api (endpoint: String, metodo: HttpMethod, formData: List<PartData>, token: String = "", newHeaders: Headers? = null, pamerameters : Parameters? = null): HttpResponse {
         val response: HttpResponse = client.submitFormWithBinaryData(
             url = base_url + endpoint,
-            formData = formData {
-                apply { formData }
-                append("image", imagem!!, Headers.build {
-                    append(HttpHeaders.ContentType, "image/png")
-                    append(HttpHeaders.ContentDisposition, "filename=\"avatar.png\"")
-                })
-            }
+            formData
         ) {
             method = metodo
             pamerameters
@@ -62,27 +53,28 @@ class DevagramApiService {
         return response
     }
 
-    suspend fun post(endpoint: String, body: Any, token: String = "", isFormData: Boolean? = false, imagem: ByteArray? = null, newHeaders: Headers? = null): HttpResponse {
-        if(isFormData == true){
-            val response = api(endpoint, HttpMethod.Post ,body, token, newHeaders, true, imagem)
+    suspend fun post(endpoint: String, body: List<PartData>, token: String = "", newHeaders: Headers? = null): HttpResponse {
+            val response = api(endpoint, HttpMethod.Post ,body, token, newHeaders)
             return response
-        }
+    }
 
+    suspend fun post(endpoint: String, body: Any, token: String = "", newHeaders: Headers? = null): HttpResponse {
         val response = api(endpoint, HttpMethod.Post ,body, token, newHeaders)
         return response
     }
+
 
     suspend fun get(endpoint: String, token: String = "", pamerameters: Parameters? = null, newHeaders: Headers? = null): HttpResponse {
         val response = api(endpoint, HttpMethod.Get, null, token, newHeaders, pamerameters)
         return response
     }
 
-    suspend fun put(endpoint: String, body: Any, token: String = "", isFormData: Boolean? = false, imagem: ByteArray? = null, newHeaders: Headers? = null, pamerameters: Parameters? = null): HttpResponse {
-        if(isFormData == true){
-            val response = api(endpoint, HttpMethod.Put, body, token, newHeaders, true, imagem, pamerameters)
+    suspend fun put(endpoint: String, body: List<PartData>, token: String = "", newHeaders: Headers? = null, pamerameters: Parameters? = null): HttpResponse {
+            val response = api(endpoint, HttpMethod.Put, body, token, newHeaders, pamerameters)
             return response
-        }
+    }
 
+    suspend fun put(endpoint: String, body: Any, token: String = "", newHeaders: Headers? = null, pamerameters: Parameters? = null): HttpResponse {
         val response = api(endpoint, HttpMethod.Put, body, token, newHeaders, pamerameters)
         return response
     }

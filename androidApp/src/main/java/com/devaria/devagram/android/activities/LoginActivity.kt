@@ -19,7 +19,6 @@ import com.devaria.devagram.services.Auth
 import io.ktor.client.call.*
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
-import okhttp3.Response
 
 class LoginActivity : AppCompatActivity() {
     var email : String = ""
@@ -88,7 +87,7 @@ class LoginActivity : AppCompatActivity() {
 
     fun onLogin(authData: ResponseSucesso){
         getSharedPreferences("devagram", Context.MODE_PRIVATE).edit().putString("token", authData.token).apply()
-        val intent: Intent = Intent(this, FeedActivity::class.java)
+        val intent: Intent = Intent(this, ContainerActivity::class.java)
         startActivity(intent)
     }
 

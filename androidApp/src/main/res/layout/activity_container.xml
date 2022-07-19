@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent"
+    tools:context=".activities.ContainerActivity">
+
+    <RelativeLayout
+        style="@style/HeaderStyle"
+        android:id="@+id/header"
+        android:background="@drawable/header_background"
+        >
+
+        <ImageView
+            style="@style/HeaderLogoStyle"
+            android:id="@+id/logo"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_header"></ImageView>
+
+        <EditText
+            android:background="@drawable/input_header_background"
+            android:id="@+id/pesquisa"
+            style="@style/HeaderInputPesquisarStyle"
+            android:drawableLeft="@drawable/lupa"
+            android:hint="@string/input_pesquisar"
+            android:inputType="text"
+            android:layout_alignParentRight="true"
+            android:selectAllOnFocus="true"
+            ></EditText>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        ></FrameLayout>
+
+
+    <RelativeLayout
+        style="@style/FooterStyle"
+        android:id="@+id/footer"
+        android:background="@drawable/footer_background"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            style="@style/FooterIconesStyle"
+            android:id="@+id/home"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_inativa"></ImageView>
+
+        <ImageView
+            style="@style/FooterIconesStyle"
+            android:id="@+id/add_publicacao"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/nova_publicao_inativa"></ImageView>
+
+        <ImageView
+            style="@style/FooterIconesStyle"
+            android:id="@+id/perfil"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_inativo"></ImageView>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

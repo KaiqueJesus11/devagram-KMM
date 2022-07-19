@@ -83,12 +83,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\De
 		ADDED from C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:9:9-36
 	android:theme
 		ADDED from C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:11:9-40
-activity#com.devaria.devagram.android.activities.FeedActivity
+activity#com.devaria.devagram.android.activities.ContainerActivity
 ADDED from C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:12:9-14:40
 	android:exported
 		ADDED from C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:13:13-52
+		ADDED from C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:13:13-57
 activity#com.devaria.devagram.android.activities.CadastroActivity
 ADDED from C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported

@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val token = getSharedPreferences("devagram", Context.MODE_PRIVATE).getString("token", "")
         if(token != ""){
-            val intent = Intent(this, FeedActivity::class.java)
+            val intent = Intent(this, ContainerActivity::class.java)
             startActivity(intent)
         }else{
             val intent = Intent(this, LoginActivity::class.java)

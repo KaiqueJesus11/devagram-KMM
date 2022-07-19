@@ -19,7 +19,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.devaria.devagram.android.activities.FeedActivity"
+            android:name="com.devaria.devagram.android.activities.ContainerActivity"
             android:exported="false" />
         <activity
             android:name="com.devaria.devagram.android.activities.CadastroActivity"

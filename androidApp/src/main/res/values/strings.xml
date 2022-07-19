@@ -9,4 +9,8 @@
     <string name="text_ja_possui_conta">Já possui uma conta?</string>
     <string name="text_faca_cadastro"><u>Faça seu cadastro agora!</u></string>
     <string name="text_faca_login"><u>Faça seu login agora!</u></string>
+    <string name="input_pesquisar">Pesquisar</string>
+    <string name="rota_home">HOME</string>
+    <string name="rota_nova_publicacao">NOVA_PUBLICACAO</string>
+    <string name="rota_perfil">PERFIL</string>
 </resources>

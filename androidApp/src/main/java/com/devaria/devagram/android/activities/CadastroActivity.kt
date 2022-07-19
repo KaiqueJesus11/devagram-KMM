@@ -3,15 +3,19 @@ package com.devaria.devagram.android.activities
 import android.Manifest
 import android.annotation.TargetApi
 import android.app.Activity
+import android.app.AlertDialog
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.graphics.Matrix
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -19,16 +23,26 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.devaria.devagram.Validacoes
 import com.devaria.devagram.android.R
+import com.devaria.devagram.model.Cadastrar.Cadastrar
+import com.devaria.devagram.model.Login.Login
+import com.devaria.devagram.model.Login.ResponseErro
+import com.devaria.devagram.model.Login.ResponseSucesso
+import com.devaria.devagram.services.Auth
+import io.ktor.client.call.*
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.launch
+import java.io.ByteArrayOutputStream
 
 class CadastroActivity : AppCompatActivity() {
     var nome : String = ""
     var email : String = ""
     var senha : String = ""
-    lateinit var avatar: ByteArray
+    var avatar: ByteArray? = null
     var confirmacaoSenha : String = ""
     lateinit var botaoCadastrar : Button
     lateinit var tirarFoto : ImageView
     val REQUEST_CODE = 200
+    private val mainScope = MainScope()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -87,6 +101,62 @@ class CadastroActivity : AppCompatActivity() {
         tirarFoto.setOnClickListener {
             capturarFoto()
         }
+
+        botaoCadastrar.setOnClickListener {
+            mainScope.launch {
+                kotlin.runCatching {
+                    Auth().cadastrar(Cadastrar(nome, email, senha, avatar))
+                }.onSuccess {
+                    if(it.status.value >= 400){
+                        val erroData : com.devaria.devagram.model.Cadastrar.ResponseErro = it.body()
+                        Log.e("Erro", "Erro: ${erroData.erro}")
+                        showDialog("Erro", "Erro: ${erroData.erro}")
+                    }else{
+                        val authData : com.devaria.devagram.model.Cadastrar.ResponseSucesso = it.body()
+                        showDialog("Sucesso!", "${authData.msg}")
+                        aoCadastrar()
+                    }
+                }.onFailure {
+                    Log.e("Erro", "Erro: ${it.localizedMessage}")
+                    showDialog("Erro", "Erro: ${it.localizedMessage}")
+                }
+            }
+            Log.i("Botao cadastrar", "Clicado")
+        }
+    }
+
+    fun aoCadastrar(){
+        mainScope.launch {
+            kotlin.runCatching {
+                Auth().login(Login(email, senha))
+            }.onSuccess {
+                if(it.status.value >= 400){
+                    val erroData : ResponseErro = it.body()
+                    Log.e("Erro", "Erro: ${erroData.erro}")
+                    showDialog("Erro", "Erro: ${erroData.erro}")
+                }else{
+                    val authData : ResponseSucesso = it.body()
+                    onLogin(authData)
+                }
+            }.onFailure {
+                Log.e("Erro", "Erro: ${it.localizedMessage}")
+                showDialog("Erro", "Erro: ${it.localizedMessage}")
+            }
+        }
+    }
+
+    fun onLogin(authData: ResponseSucesso){
+        getSharedPreferences("devagram", Context.MODE_PRIVATE).edit().putString("token", authData.token).apply()
+        val intent: Intent = Intent(this, ContainerActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun showDialog(title: String, message: String){
+        val alertDialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this)
+        alertDialogBuilder.setTitle(title)
+        alertDialogBuilder.setMessage(message)
+        val alertDialog = alertDialogBuilder.create()
+        alertDialog.show()
     }
 
     fun capturarFoto (){
@@ -97,10 +167,25 @@ class CadastroActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode == Activity.RESULT_OK && requestCode == REQUEST_CODE && data != null){
-            var foto = data.extras?.get("data") as Bitmap
-            avatar = data.extras?.get("data") as ByteArray
+            var foto = editarImage(data.extras?.get("data") as Bitmap, 120, 120)
+            val stream = ByteArrayOutputStream()
+            foto!!.compress(Bitmap.CompressFormat.PNG, 100, stream)
+            avatar = stream.toByteArray()
             tirarFoto.setImageBitmap(foto)
         }
+    }
+
+    fun editarImage(imagem: Bitmap, newHeigth: Int, newWidth: Int): Bitmap? {
+        val width = imagem.width
+        val heigth = imagem.height
+        val scaleWidth = newWidth.toFloat() / width
+        val scaleHeigth = newHeigth.toFloat() / heigth
+
+        val matrix = Matrix()
+        matrix.postScale(scaleWidth, scaleHeigth)
+
+        return Bitmap.createBitmap(imagem, 0, 0, width, heigth, matrix, false)
+
     }
 
     @TargetApi(Build.VERSION_CODES.M)

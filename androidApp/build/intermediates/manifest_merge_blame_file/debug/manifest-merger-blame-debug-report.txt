@@ -31,8 +31,8 @@
 20-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:11:9-40
 21        <activity
 21-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:12:9-14:40
-22            android:name="com.devaria.devagram.android.activities.FeedActivity"
-22-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:13:13-52
+22            android:name="com.devaria.devagram.android.activities.ContainerActivity"
+22-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:13:13-57
 23            android:exported="false" />
 23-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:14:13-37
 24        <activity

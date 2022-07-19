@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.FeedActivity"
+            android:name=".activities.ContainerActivity"
             android:exported="false" />
         <activity
             android:name=".activities.CadastroActivity"

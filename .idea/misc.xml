@@ -3,9 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/drawable/footer_background.xml" value="0.2295" />
+        <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/drawable/header_background.xml" value="0.2295" />
+        <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/drawable/input_header_background.xml" value="0.2295" />
         <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/activity_cadastro.xml" value="0.33" />
+        <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/activity_container.xml" value="0.36666666666666664" />
         <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/activity_feed.xml" value="0.20208333333333334" />
         <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/fragment_feed.xml" value="0.24365942028985507" />
+        <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/fragment_nova_publicacao.xml" value="0.24365942028985507" />
+        <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/fragment_perfil.xml" value="0.24365942028985507" />
       </map>
     </option>
   </component>
