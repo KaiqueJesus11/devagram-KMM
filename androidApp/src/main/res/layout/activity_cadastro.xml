@@ -10,16 +10,37 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".activities.CadastroActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foto_container"
+        >
 
-    <ImageView
-        android:id="@+id/tirar_foto"
-        android:layout_width="@dimen/avatar_foto"
-        android:layout_height="@dimen/avatar_foto"
-        android:src="@drawable/avatar_foto"
-        android:layout_marginTop="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        ></ImageView>
+        <ImageView
+            android:id="@+id/tirar_foto"
+            android:layout_width="@dimen/avatar_foto"
+            android:layout_height="@dimen/avatar_foto"
+            android:src="@drawable/avatar_foto"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            ></ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:visibility="gone"
+            android:id="@+id/foto"
+            android:layout_width="@dimen/avatar_foto"
+            android:layout_height="@dimen/avatar_foto"
+            android:src="@drawable/avatar_foto"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            ></de.hdodenhof.circleimageview.CircleImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <EditText
         android:id="@+id/nome"
@@ -31,7 +52,7 @@
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tirar_foto"/>
+        app:layout_constraintTop_toBottomOf="@+id/foto_container"/>
 
     <EditText
         android:id="@+id/email"

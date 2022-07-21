@@ -1,106 +1,134 @@
 [
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\layout_activity_feed.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\layout\\activity_feed.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_avatar_foto.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\avatar_foto.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\layout_item_publicacao.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\layout\\item_publicacao.xml"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_logo_header.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\logo_header.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_nova_publicao_inativa.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\nova_publicao_inativa.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_home_inativa.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\home_inativa.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\font_biennale_bold.otf.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\font\\biennale_bold.otf"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_header_background.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\header_background.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\layout_fragment_perfil.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\layout\\fragment_perfil.xml"
     },
     {
-        "merged": "com.devaria.devagram.android.androidApp-merged_res-19:/layout_fragment_perfil.xml.flat",
-        "source": "com.devaria.devagram.android.androidApp-main-21:/layout/fragment_perfil.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_avatar_foto.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\avatar_foto.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_user_inativo.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\user_inativo.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_footer_background.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\footer_background.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_nova_publicacao.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\nova_publicacao.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\font_biennale.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\font\\biennale.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_user.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\user.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_envelope.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\envelope.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\layout_activity_cadastro.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\layout\\activity_cadastro.xml"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_lupa.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\lupa.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_curtir_inativo.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\curtir_inativo.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_envelope.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\envelope.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\font_biennale_regular.otf.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\font\\biennale_regular.otf"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_comentario_inativo.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\comentario_inativo.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_home.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\home.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\layout_fragment_feed.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\layout\\fragment_feed.xml"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_nova_publicacao.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\nova_publicacao.png"
+        "merged": "com.devaria.devagram.android.androidApp-merged_res-20:/layout_activity_cadastro.xml.flat",
+        "source": "com.devaria.devagram.android.androidApp-main-22:/layout/activity_cadastro.xml"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\layout_activity_cadastro.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\layout\\activity_cadastro.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_logo_header.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\logo_header.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\font_biennale_bold.otf.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\font\\biennale_bold.otf"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_input_header_background.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\input_header_background.xml"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_key.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\key.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\font_biennale_regular.otf.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\font\\biennale_regular.otf"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_user.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\user.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_home.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\home.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_key.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\key.png"
     },
     {
-        "merged": "com.devaria.devagram.android.androidApp-merged_res-19:/layout_fragment_nova_publicacao.xml.flat",
-        "source": "com.devaria.devagram.android.androidApp-main-21:/layout/fragment_nova_publicacao.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_curtir.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\curtir.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_input_header_background.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\input_header_background.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_footer_background.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\footer_background.xml"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\layout_activity_container.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\layout\\activity_container.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_post.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\post.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\layout_fragment_feed.xml.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\layout\\fragment_feed.xml"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_lupa.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\lupa.png"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_nova_publicao_inativa.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\nova_publicao_inativa.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-19:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-21:\\drawable\\logo.png"
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_comentario.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\comentario.png"
+    },
+    {
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\layout_fragment_nova_publicacao.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\layout\\fragment_nova_publicacao.xml"
+    },
+    {
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\layout_activity_container.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\layout\\activity_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\font_biennale.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\font\\biennale.xml"
+    },
+    {
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_header_background.xml.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\header_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_avatar.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\avatar.png"
+    },
+    {
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_user_inativo.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\user_inativo.png"
+    },
+    {
+        "merged": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-merged_res-20:\\drawable_home_inativa.png.flat",
+        "source": "C:\\Users\\Devaria\\.gradle\\daemon\\7.3.3\\com.devaria.devagram.android.androidApp-main-22:\\drawable\\home_inativa.png"
     }
 ]

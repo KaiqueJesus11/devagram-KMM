@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        style="@style/FeedHeaderStyle"
+        android:layout_alignParentTop="true"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            style="@style/FeedAvatarHeaderStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toRightOf="@id/avatar"
+            android:fontFamily="@font/biennale"
+            android:text="Nome"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/conteudo"
+        style="@style/FeedConteudoStyle"
+        android:layout_below="@id/header"
+        >
+
+        <ImageView
+            android:id="@+id/imagem"
+            style="@style/FeedImagemStyle"
+            android:src="@drawable/post"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/interacoes"
+        style="@style/FeedInteracoesStyle"
+        android:layout_below="@id/conteudo"
+        >
+
+        <ImageView
+            android:id="@+id/curtir"
+            style="@style/FeedInteracoesIconesStyle"
+            android:layout_centerVertical="true"
+            android:src="@drawable/curtir_inativo"
+            />
+
+        <ImageView
+            android:id="@+id/comentario"
+            style="@style/FeedInteracoesIconesStyle"
+            android:layout_marginHorizontal="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/comentario_inativo"
+            android:layout_toRightOf="@id/curtir"
+            />
+
+        <TextView
+            android:id="@+id/curtido_por"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/curtido_por"
+            android:fontFamily="@font/biennale"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/comentario"
+            />
+
+        <TextView
+            android:id="@+id/qtd_curtidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qtd_curtidas"
+            android:fontFamily="@font/biennale"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/curtido_por"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/descricao"
+        style="@style/FeedDescricaoStyle"
+        android:layout_below="@id/interacoes"
+        >
+
+        <TextView
+            android:id="@+id/nome_descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:fontFamily="@font/biennale"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/texto_descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição"
+            android:fontFamily="@font/biennale"
+            android:textStyle="normal"
+            android:layout_marginHorizontal="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/nome_descricao"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comentarios"
+        style="@style/FeedDescricaoStyle"
+        android:layout_below="@id/descricao"
+        >
+
+        <ListView
+            android:id="@+id/lista_comentarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/input_container"
+            style="@style/FeedContainerComentarioInputStyle"
+            android:layout_below="@id/lista_comentarios"
+            android:visibility="gone"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_input"
+                style="@style/FeedAvatarHeaderStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/avatar"
+                />
+
+            <EditText
+                android:id="@+id/novo_comentario"
+                style="@style/FeedComentarioInputStyle"
+                android:hint="@string/input_comentario"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:layout_toRightOf="@id/avatar_input"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

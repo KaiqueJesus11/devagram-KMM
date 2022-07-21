@@ -241,6 +241,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -1776,6 +1780,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable avatar
 drawable avatar_foto
 drawable avd_hide_password
 drawable avd_show_password
@@ -1787,6 +1792,10 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable comentario
+drawable comentario_inativo
+drawable curtir
+drawable curtir_inativo
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -1843,6 +1852,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable nova_publicacao
 drawable nova_publicao_inativa
+drawable post
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1939,6 +1949,8 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id avatar
+id avatar_input
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -1975,18 +1987,23 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id comentario
+id comentarios
 id confirm_button
 id confirmar_senha
 id constraint
 id container
 id content
 id contentPanel
+id conteudo
 id contiguous
 id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
 id currentState
+id curtido_por
+id curtir
 id custom
 id customPanel
 id cut
@@ -1997,6 +2014,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descricao
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2046,6 +2064,8 @@ id flip
 id floating
 id footer
 id forever
+id foto
+id foto_container
 id fragment_container_view_tag
 id frame_container
 id frost
@@ -2071,9 +2091,12 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imagem
 id immediateStop
 id included
 id info
+id input_container
+id interacoes
 id invisible
 id inward
 id italic
@@ -2091,6 +2114,8 @@ id line3
 id linear
 id listMode
 id list_item
+id list_view
+id lista_comentarios
 id login
 id logo
 id main_view
@@ -2162,12 +2187,14 @@ id neverCompleteToStart
 id noScroll
 id noState
 id nome
+id nome_descricao
 id none
 id normal
 id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id novo_comentario
 id off
 id on
 id outline
@@ -2191,6 +2218,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id qtd_curtidas
 id radio
 id ratio
 id rectangles
@@ -2298,6 +2326,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id texto_descricao
 id time
 id tirar_foto
 id title
@@ -2427,6 +2456,7 @@ layout design_text_input_start_icon
 layout fragment_feed
 layout fragment_nova_publicacao
 layout fragment_perfil
+layout item_publicacao
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2533,12 +2563,14 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string curtido_por
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string input_comentario
 string input_confirmar_senha
 string input_email
 string input_nome
@@ -2605,6 +2637,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string qtd_curtidas
 string rota_home
 string rota_nova_publicacao
 string rota_perfil
@@ -2848,6 +2881,15 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
+style FeedAvatarHeaderStyle
+style FeedComentarioInputStyle
+style FeedContainerComentarioInputStyle
+style FeedConteudoStyle
+style FeedDescricaoStyle
+style FeedHeaderStyle
+style FeedImagemStyle
+style FeedInteracoesIconesStyle
+style FeedInteracoesStyle
 style FooterIconesStyle
 style FooterStyle
 style HeaderInputPesquisarStyle
@@ -3371,6 +3413,7 @@ styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCo
 styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carousel_firstView carousel_forwardTransition carousel_infinite carousel_nextState carousel_previousState carousel_touchUpMode carousel_touchUp_dampeningFactor carousel_touchUp_velocityThreshold
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

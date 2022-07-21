@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.devaria.devagram.android.androidApp-mergeDebugResources-17:/values-si/values-si.xml",
+            "outputFile": "com.devaria.devagram.android.androidApp-mergeDebugResources-18:/values-si/values-si.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Devaria\\.gradle\\caches\\transforms-3\\179ea1fdc97195f86b78ee8aabb6e645\\transformed\\material-1.4.0\\res\\values-si\\values-si.xml",

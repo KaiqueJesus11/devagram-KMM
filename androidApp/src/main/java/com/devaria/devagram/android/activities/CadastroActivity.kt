@@ -16,6 +16,7 @@ import android.provider.MediaStore
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -41,6 +42,7 @@ class CadastroActivity : AppCompatActivity() {
     var confirmacaoSenha : String = ""
     lateinit var botaoCadastrar : Button
     lateinit var tirarFoto : ImageView
+    lateinit var foto : ImageView
     val REQUEST_CODE = 200
     private val mainScope = MainScope()
 
@@ -54,6 +56,7 @@ class CadastroActivity : AppCompatActivity() {
         val inputSenha : EditText = findViewById(R.id.senha)
         val inputConfirmacaoSenha : EditText = findViewById(R.id.confirmar_senha)
         tirarFoto = findViewById(R.id.tirar_foto)
+        foto = findViewById(R.id.foto)
 
         requestPermissions()
 
@@ -167,11 +170,14 @@ class CadastroActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(resultCode == Activity.RESULT_OK && requestCode == REQUEST_CODE && data != null){
-            var foto = editarImage(data.extras?.get("data") as Bitmap, 120, 120)
+            var imagem = editarImage(data.extras?.get("data") as Bitmap, 120, 120)
             val stream = ByteArrayOutputStream()
-            foto!!.compress(Bitmap.CompressFormat.PNG, 100, stream)
+            imagem!!.compress(Bitmap.CompressFormat.PNG, 100, stream)
             avatar = stream.toByteArray()
-            tirarFoto.setImageBitmap(foto)
+            foto.setImageBitmap(imagem)
+            tirarFoto.visibility = View.GONE
+            foto.visibility = View.VISIBLE
+
         }
     }
 

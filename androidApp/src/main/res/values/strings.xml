@@ -13,4 +13,8 @@
     <string name="rota_home">HOME</string>
     <string name="rota_nova_publicacao">NOVA_PUBLICACAO</string>
     <string name="rota_perfil">PERFIL</string>
+    <string name="curtido_por">Curtido por</string>
+    <string name="qtd_curtidas">0 pessoas</string>
+    <string name="input_comentario">Adicione um comentário ...</string>
+
 </resources>

@@ -41,6 +41,7 @@
 
     <style name="HeaderInputPesquisarStyle" parent="@style/Widget.AppCompat.EditText">
         <item name="android:layout_marginHorizontal">20dp</item>
+        <item name="android:paddingHorizontal">10dp</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">5dp</item>
         <item name="android:fontFamily">@font/biennale</item>
@@ -48,7 +49,6 @@
         <item name="android:layout_height">39dp</item>
         <item name="android:textColor">@color/corPrimaria2</item>
         <item name="android:textSize">14dp</item>
-        <item name="android:backgroundTint">@color/branco</item>
         <item name="android:drawablePadding">10dp</item>
     </style>
 
@@ -64,6 +64,62 @@
     <style name="FooterIconesStyle" >
         <item name="android:layout_height">24dp</item>
         <item name="android:layout_width">24dp</item>
+    </style>
+
+<!--    Feed-->
+
+    <style name="FeedHeaderStyle">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingHorizontal">20dp</item>
+    </style>
+
+    <style name="FeedAvatarHeaderStyle">
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_width">32dp</item>
+    </style>
+
+    <style name="FeedConteudoStyle">
+        <item name="android:layout_height">360dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="FeedImagemStyle">
+        <item name="android:layout_height">360dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="FeedInteracoesStyle">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingHorizontal">20dp</item>
+    </style>
+
+    <style name="FeedInteracoesIconesStyle">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+    </style>
+
+    <style name="FeedDescricaoStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingHorizontal">20dp</item>
+    </style>
+
+    <style name="FeedContainerComentarioInputStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginVertical">20dp</item>
+    </style>
+
+    <style name="FeedComentarioInputStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/biennale</item>
+        <item name="android:layout_width">296dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/corPrimaria2</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:backgroundTint">@color/branco</item>
+        <item name="android:drawablePadding">10dp</item>
     </style>
 
 </resources>

@@ -11,8 +11,8 @@
           <sourceSet>Devagram.shared.commonTest</sourceSet>
           <sourceSet>Devagram.shared.iosTest</sourceSet>
           <sourceSet>Devagram.shared.iosX64Main</sourceSet>
-          <sourceSet>Devagram.shared.iosMain</sourceSet>
           <sourceSet>Devagram.shared.commonMain</sourceSet>
+          <sourceSet>Devagram.shared.iosMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />
