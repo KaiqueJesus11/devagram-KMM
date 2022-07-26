@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HeaderFragment">
+
+    <RelativeLayout
+        android:visibility="gone"
+        style="@style/HeaderStyle"
+        android:id="@+id/header_home"
+        android:background="@drawable/header_background"
+        >
+
+        <ImageView
+            style="@style/HeaderLogoStyle"
+            android:id="@+id/logo"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_header"></ImageView>
+
+        <EditText
+            android:background="@drawable/input_header_background"
+            android:id="@+id/pesquisa"
+            style="@style/HeaderInputPesquisarStyle"
+            android:drawableLeft="@drawable/lupa"
+            android:hint="@string/input_pesquisar"
+            android:inputType="text"
+            android:layout_alignParentRight="true"
+            android:selectAllOnFocus="true"
+            ></EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        style="@style/HeaderStyle"
+        android:id="@+id/header_perfil_expecifico"
+        android:background="@drawable/header_background"
+        >
+
+        <ImageView
+            style="@style/HeaderVoltarStyle"
+            android:id="@+id/voltar"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/voltar"></ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/header_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:fontFamily="@font/biennale"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/cinza4"
+                android:layout_marginHorizontal="3dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        style="@style/HeaderStyle"
+        android:id="@+id/header_perfil_interno"
+        android:background="@drawable/header_background"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/header_perfil_interno_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:fontFamily="@font/biennale"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/cinza4"
+                android:layout_marginHorizontal="3dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/HeaderLogoutStyle"
+            android:id="@+id/logout"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logout"></ImageView>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -16,6 +16,7 @@ class DevagramApiService {
             json(Json {
                 prettyPrint = true
                 isLenient = true
+                ignoreUnknownKeys = true
             })
         }
     }
@@ -74,7 +75,7 @@ class DevagramApiService {
             return response
     }
 
-    suspend fun put(endpoint: String, body: Any, token: String = "", newHeaders: Headers? = null, pamerameters: Parameters? = null): HttpResponse {
+    suspend fun put(endpoint: String, body: Any? = null, token: String = "", newHeaders: Headers? = null, pamerameters: Parameters? = null): HttpResponse {
         val response = api(endpoint, HttpMethod.Put, body, token, newHeaders, pamerameters)
         return response
     }

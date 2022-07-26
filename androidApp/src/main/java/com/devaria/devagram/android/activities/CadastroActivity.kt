@@ -24,6 +24,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.devaria.devagram.Validacoes
 import com.devaria.devagram.android.R
+import com.devaria.devagram.android.utils.Dialog
 import com.devaria.devagram.model.Cadastrar.Cadastrar
 import com.devaria.devagram.model.Login.Login
 import com.devaria.devagram.model.Login.ResponseErro
@@ -113,15 +114,15 @@ class CadastroActivity : AppCompatActivity() {
                     if(it.status.value >= 400){
                         val erroData : com.devaria.devagram.model.Cadastrar.ResponseErro = it.body()
                         Log.e("Erro", "Erro: ${erroData.erro}")
-                        showDialog("Erro", "Erro: ${erroData.erro}")
+                        Dialog(this@CadastroActivity).show("Erro", "Erro: ${erroData.erro}")
                     }else{
                         val authData : com.devaria.devagram.model.Cadastrar.ResponseSucesso = it.body()
-                        showDialog("Sucesso!", "${authData.msg}")
+                        Dialog(this@CadastroActivity).show("Sucesso!", "${authData.msg}")
                         aoCadastrar()
                     }
                 }.onFailure {
                     Log.e("Erro", "Erro: ${it.localizedMessage}")
-                    showDialog("Erro", "Erro: ${it.localizedMessage}")
+                    Dialog(this@CadastroActivity).show("Erro", "Erro: ${it.localizedMessage}")
                 }
             }
             Log.i("Botao cadastrar", "Clicado")
@@ -136,14 +137,14 @@ class CadastroActivity : AppCompatActivity() {
                 if(it.status.value >= 400){
                     val erroData : ResponseErro = it.body()
                     Log.e("Erro", "Erro: ${erroData.erro}")
-                    showDialog("Erro", "Erro: ${erroData.erro}")
+                    Dialog(this@CadastroActivity).show("Erro", "Erro: ${erroData.erro}")
                 }else{
                     val authData : ResponseSucesso = it.body()
                     onLogin(authData)
                 }
             }.onFailure {
                 Log.e("Erro", "Erro: ${it.localizedMessage}")
-                showDialog("Erro", "Erro: ${it.localizedMessage}")
+                Dialog(this@CadastroActivity).show("Erro", "Erro: ${it.localizedMessage}")
             }
         }
     }
@@ -152,14 +153,6 @@ class CadastroActivity : AppCompatActivity() {
         getSharedPreferences("devagram", Context.MODE_PRIVATE).edit().putString("token", authData.token).apply()
         val intent: Intent = Intent(this, ContainerActivity::class.java)
         startActivity(intent)
-    }
-
-    fun showDialog(title: String, message: String){
-        val alertDialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this)
-        alertDialogBuilder.setTitle(title)
-        alertDialogBuilder.setMessage(message)
-        val alertDialog = alertDialogBuilder.create()
-        alertDialog.show()
     }
 
     fun capturarFoto (){

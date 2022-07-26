@@ -38,7 +38,6 @@
         <ImageView
             android:id="@+id/imagem"
             style="@style/FeedImagemStyle"
-            android:src="@drawable/post"
             />
 
     </RelativeLayout>
@@ -95,27 +94,13 @@
         style="@style/FeedDescricaoStyle"
         android:layout_below="@id/interacoes"
         >
-
-        <TextView
-            android:id="@+id/nome_descricao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nome"
-            android:fontFamily="@font/biennale"
-            android:textStyle="bold"
-            android:layout_centerVertical="true"
-            />
-
         <TextView
             android:id="@+id/texto_descricao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Descrição"
+            android:text="Descricao"
             android:fontFamily="@font/biennale"
-            android:textStyle="normal"
-            android:layout_marginHorizontal="3dp"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/nome_descricao"
             />
 
     </RelativeLayout>
@@ -129,10 +114,9 @@
         <ListView
             android:id="@+id/lista_comentarios"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:divider="@null"
-            android:dividerHeight="0dp"
-            />
+            android:dividerHeight="0dp" />
 
         <RelativeLayout
             android:id="@+id/input_container"

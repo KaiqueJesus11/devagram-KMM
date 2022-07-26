@@ -12,6 +12,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.devaria.devagram.android.R
+import com.devaria.devagram.android.utils.Dialog
 import com.devaria.devagram.model.Login.Login
 import com.devaria.devagram.model.Login.ResponseErro
 import com.devaria.devagram.model.Login.ResponseSucesso
@@ -59,14 +60,14 @@ class LoginActivity : AppCompatActivity() {
                    if(it.status.value >= 400){
                        val erroData : ResponseErro = it.body()
                        Log.e("Erro", "Erro: ${erroData.erro}")
-                       showDialog("Erro", "Erro: ${erroData.erro}")
+                       Dialog(this@LoginActivity).show("Erro", "Erro: ${erroData.erro}")
                    }else{
                        val authData : ResponseSucesso = it.body()
                        onLogin(authData)
                    }
                 }.onFailure {
                     Log.e("Erro", "Erro: ${it.localizedMessage}")
-                    showDialog("Erro", "Erro: ${it.localizedMessage}")
+                    Dialog(this@LoginActivity).show("Erro", "Erro: ${it.localizedMessage}")
                 }
             }
         }
@@ -77,13 +78,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun showDialog(title: String, message: String){
-        val alertDialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this@LoginActivity)
-        alertDialogBuilder.setTitle(title)
-        alertDialogBuilder.setMessage(message)
-        val alertDialog = alertDialogBuilder.create()
-        alertDialog.show()
-    }
+
 
     fun onLogin(authData: ResponseSucesso){
         getSharedPreferences("devagram", Context.MODE_PRIVATE).edit().putString("token", authData.token).apply()

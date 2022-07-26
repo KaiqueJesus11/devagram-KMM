@@ -5,9 +5,145 @@
     android:layout_height="match_parent"
     tools:context=".fragments.PerfilFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Perfil" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:id="@+id/header"
+            style="@style/PerfilHeaderStyle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar"
+                style="@style/PerfilAvatarHeaderStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/avatar" />
+
+            <RelativeLayout
+                android:id="@+id/informacoes"
+                style="@style/PerfilContainerInfosStyle"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/avatar">
+
+                <RelativeLayout
+                    android:id="@+id/publicacoes_container"
+                    style="@style/PerfilInfoStyle">
+
+                    <TextView
+                        android:id="@+id/qtd_publicacoes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/biennale"
+                        android:text="15"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/publicacoes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/qtd_publicacoes"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/biennale"
+                        android:text="Publicações"
+                        android:textSize="12dp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seguidores_container"
+                    style="@style/PerfilInfoStyle"
+                    android:layout_toEndOf="@id/publicacoes_container">
+
+                    <TextView
+                        android:id="@+id/qtd_seguidores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/biennale"
+                        android:text="120"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/seguidores"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/qtd_seguidores"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/biennale"
+                        android:text="Seguidores"
+                        android:textSize="12dp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/PerfilInfoStyle"
+                    android:layout_toEndOf="@id/seguidores_container">
+
+                    <TextView
+                        android:id="@+id/qtd_seguindo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/biennale"
+                        android:text="135"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/seguindo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/qtd_seguindo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/biennale"
+                        android:text="Seguindo"
+                        android:textSize="12dp"
+                        android:textStyle="normal" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_botao"
+                style="@style/PerfilContainerInfosStyle"
+                android:layout_toEndOf="@id/avatar"
+                android:layout_below="@id/informacoes"
+                android:paddingHorizontal="17dp"
+                >
+
+                <Button
+                    android:id="@+id/seguir"
+                    style="@style/PerfilButtonOutlineStyle"
+                    android:enabled="true"
+                    android:text="Seguir" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <fragment
+            android:name="com.devaria.devagram.android.fragments.FeedFragment"
+            android:id="@+id/feedFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header" />
+
+    </RelativeLayout>
+
 </FrameLayout>

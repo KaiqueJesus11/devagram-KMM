@@ -1784,6 +1784,8 @@ drawable avatar
 drawable avatar_foto
 drawable avd_hide_password
 drawable avd_show_password
+drawable botao_outline_perfil_background
+drawable botao_perfil_background
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1816,6 +1818,7 @@ drawable input_header_background
 drawable key
 drawable logo
 drawable logo_header
+drawable logout
 drawable lupa
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -1858,6 +1861,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
 drawable user_inativo
+drawable voltar
 font biennale
 font biennale_bold
 font biennale_regular
@@ -1993,6 +1997,7 @@ id confirm_button
 id confirmar_senha
 id constraint
 id container
+id container_botao
 id content
 id contentPanel
 id conteudo
@@ -2054,6 +2059,7 @@ id expanded_menu
 id fade
 id fazer_cadastro
 id fazer_login
+id feedFragment
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2079,6 +2085,12 @@ id grouping
 id groups
 id guideline
 id header
+id header_container
+id header_home
+id header_nome
+id header_perfil_expecifico
+id header_perfil_interno
+id header_perfil_interno_nome
 id header_title
 id hideable
 id home
@@ -2095,6 +2107,7 @@ id imagem
 id immediateStop
 id included
 id info
+id informacoes
 id input_container
 id interacoes
 id invisible
@@ -2118,6 +2131,7 @@ id list_view
 id lista_comentarios
 id login
 id logo
+id logout
 id main_view
 id masked
 id match_constraint
@@ -2187,7 +2201,6 @@ id neverCompleteToStart
 id noScroll
 id noState
 id nome
-id nome_descricao
 id none
 id normal
 id north
@@ -2218,7 +2231,12 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id publicacoes
+id publicacoes_container
 id qtd_curtidas
+id qtd_publicacoes
+id qtd_seguidores
+id qtd_seguindo
 id radio
 id ratio
 id rectangles
@@ -2249,6 +2267,10 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seguidores
+id seguidores_container
+id seguindo
+id seguir
 id select_dialog_listview
 id selected
 id selection_type
@@ -2326,6 +2348,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id texto_comentario
 id texto_descricao
 id time
 id tirar_foto
@@ -2357,6 +2380,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id voltar
 id west
 id withText
 id withinBounds
@@ -2454,8 +2478,10 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_feed
+layout fragment_header
 layout fragment_nova_publicacao
 layout fragment_perfil
+layout item_comentario
 layout item_publicacao
 layout material_chip_input_combo
 layout material_clock_display
@@ -2568,6 +2594,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string input_comentario
@@ -2883,6 +2910,7 @@ style CardView_Light
 style EmptyTheme
 style FeedAvatarHeaderStyle
 style FeedComentarioInputStyle
+style FeedComentarioStyle
 style FeedContainerComentarioInputStyle
 style FeedConteudoStyle
 style FeedDescricaoStyle
@@ -2894,7 +2922,9 @@ style FooterIconesStyle
 style FooterStyle
 style HeaderInputPesquisarStyle
 style HeaderLogoStyle
+style HeaderLogoutStyle
 style HeaderStyle
+style HeaderVoltarStyle
 style InputStyle
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
@@ -2906,6 +2936,12 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style PerfilAvatarHeaderStyle
+style PerfilButtonOutlineStyle
+style PerfilButtonStyle
+style PerfilContainerInfosStyle
+style PerfilHeaderStyle
+style PerfilInfoStyle
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

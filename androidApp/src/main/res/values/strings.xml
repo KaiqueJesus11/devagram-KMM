@@ -16,5 +16,7 @@
     <string name="curtido_por">Curtido por</string>
     <string name="qtd_curtidas">0 pessoas</string>
     <string name="input_comentario">Adicione um comentário ...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

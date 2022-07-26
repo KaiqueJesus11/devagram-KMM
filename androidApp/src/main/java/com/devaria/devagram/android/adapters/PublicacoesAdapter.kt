@@ -1,33 +1,51 @@
+import android.R.attr.data
 import android.content.Context
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.RelativeLayout
-import android.widget.TextView
+import android.view.inputmethod.EditorInfo
+import android.widget.*
+import androidx.core.text.HtmlCompat
 import com.devaria.devagram.android.R
+import com.devaria.devagram.android.utils.Dialog
 import com.devaria.devagram.android.utils.DownloadImagem
+import com.devaria.devagram.dto.ComentarioDto
+import com.devaria.devagram.model.Cadastrar.ResponseErro
+import com.devaria.devagram.model.Feed.Comentario
 import com.devaria.devagram.model.Feed.Publicacao
+import com.devaria.devagram.services.Feed
+import io.ktor.client.call.*
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.launch
 
 
 class PublicoesAdapter(context: Context?, publicacoes: ArrayList<Publicacao>) :
     ArrayAdapter<Publicacao>(context!!, 0, publicacoes) {
+    private val mainScope = MainScope()
 
     override fun isEnabled(position: Int): Boolean{
         return false
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+        val shared = context?.getSharedPreferences("devagram", Context.MODE_PRIVATE)
+        val token = shared.getString("token", "")
+        val idUsuarioLogado = shared.getString("id_usuario_logado","")
+        val nomeUsuarioLogado = shared.getString("nome_usuario_logado","")
+        var novoComentario : String =  ""
+
         var curtido: Boolean = false
         var comentado: Boolean = false
 
         var convertView: View? = convertView
         val publicacao: Publicacao? = getItem(position)
+        var qtdLikes : Int = publicacao!!.likes.count()
+
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.item_publicacao, parent, false)
         }
-
 
         val avatar : ImageView = convertView!!.findViewById(R.id.avatar)
         val nome : TextView = convertView!!.findViewById(R.id.nome)
@@ -36,25 +54,56 @@ class PublicoesAdapter(context: Context?, publicacoes: ArrayList<Publicacao>) :
         val curtir : ImageView = convertView!!.findViewById(R.id.curtir)
         val comentario : ImageView = convertView!!.findViewById(R.id.comentario)
         val qtdCurtidas : TextView = convertView!!.findViewById(R.id.qtd_curtidas)
-        val nomeDescricao : TextView = convertView!!.findViewById(R.id.nome_descricao)
         val descricao : TextView = convertView!!.findViewById(R.id.texto_descricao)
         val containerComentario : RelativeLayout = convertView!!.findViewById(R.id.input_container)
+        val inputComentario: EditText = convertView!!.findViewById(R.id.novo_comentario)
 
-        DownloadImagem(avatar).execute(publicacao!!.usuario.avatar)
-        DownloadImagem(avatarInput).execute(publicacao!!.usuario.avatar)
+
+        val adapter = ComentariosAdapter(convertView!!.context, publicacao!!.comentarios)
+        val listView : ListView = convertView!!.findViewById(R.id.lista_comentarios)
+        listView.adapter = adapter
+
+        if(publicacao!!.likes.contains(idUsuarioLogado)){
+            curtido = true
+            curtir.setImageDrawable(context.resources.getDrawable(R.drawable.curtir))
+        }
+
+        if(publicacao!!.usuario.avatar != ""){
+            DownloadImagem(avatar).execute(publicacao!!.usuario.avatar)
+            DownloadImagem(avatarInput).execute(publicacao!!.usuario.avatar)
+        }
+
         DownloadImagem(imagem).execute(publicacao!!.foto)
+
         nome.setText(publicacao!!.usuario.nome)
-        qtdCurtidas.setText(publicacao!!.likes.count().toString() + " pessoas")
-        nomeDescricao.setText(publicacao!!.usuario.nome)
-        descricao.setText(publicacao!!.descricao)
+        qtdCurtidas.setText(qtdLikes.toString() + " pessoas")
+        val descricaoFormatada = "<b>${publicacao!!.usuario.nome}</b> ${publicacao!!.descricao}"
+        descricao.text = HtmlCompat.fromHtml(descricaoFormatada, HtmlCompat.FROM_HTML_MODE_LEGACY)
 
         curtir.setOnClickListener {
-            if(!curtido){
-                curtido = true
-                curtir.setImageDrawable(context.resources.getDrawable(R.drawable.curtir))
-            }else{
-                curtido = false
-                curtir.setImageDrawable(context.resources.getDrawable(R.drawable.curtir_inativo))
+            mainScope.launch  {
+                kotlin.runCatching {
+                    Feed().toggleCurtir(publicacao!!._id, token!!)
+                }.onSuccess {
+                    if(it.status.value >= 400){
+                        val erroData : ResponseErro = it.body()
+                        Dialog(context).show("Erro", "Erro: ${erroData.erro}")
+                    }else{
+                        if(!curtido){
+                            curtido = true
+                            curtir.setImageDrawable(context.resources.getDrawable(R.drawable.curtir))
+                            qtdLikes++
+                            qtdCurtidas.setText(qtdLikes.toString() + " pessoas")
+                        }else{
+                            curtido = false
+                            curtir.setImageDrawable(context.resources.getDrawable(R.drawable.curtir_inativo))
+                            qtdLikes--
+                            qtdCurtidas.setText(qtdLikes.toString() + " pessoas")
+                        }
+                    }
+                }.onFailure {
+                    Dialog(context).show("Erro", "Erro: ${it.localizedMessage}")
+                }
             }
         }
 
@@ -70,6 +119,45 @@ class PublicoesAdapter(context: Context?, publicacoes: ArrayList<Publicacao>) :
             }
         }
 
+        inputComentario.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(p0: Editable?) {}
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                novoComentario = p0.toString()
+            }
+        })
+
+        inputComentario.setOnEditorActionListener(TextView.OnEditorActionListener { textView, i, keyEvent ->
+            if (i == EditorInfo.IME_ACTION_DONE) {
+                mainScope.launch {
+                    kotlin.runCatching {
+                        Feed().addComentario(publicacao!!._id, ComentarioDto(novoComentario), token!!)
+                    }.onSuccess {
+                        if(it.status.value >= 400){
+                            val erroData : ResponseErro = it.body()
+                            Dialog(context).show("Erro", "Erro: ${erroData.erro}")
+                        }else{
+                            runOnUiThread(Runnable {
+                                publicacao!!.comentarios.add(Comentario(idUsuarioLogado, nomeUsuarioLogado!!, novoComentario))
+                                adapter.notifyDataSetChanged()
+                                listView.invalidateViews()
+                                inputComentario.setText("")
+                            })
+                        }
+                    }.onFailure {
+                        Dialog(context).show("Erro", "Erro: ${it.localizedMessage}")
+                    }
+                }
+            }
+            false
+        })
+
         return convertView
     }
+
+    private fun runOnUiThread(runnable: Runnable) {
+
+    }
+
+
 }
