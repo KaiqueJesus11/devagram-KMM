@@ -39,7 +39,6 @@ class HeaderFragment : Fragment() {
         val nome_perfil = shared!!.getString("nome_perfil", "")
         val idUsuarioLogado = shared.getString("id_usuario_logado", "")
 
-
         when(rotaAtual) {
             context?.resources?.getString(R.string.rota_home) -> {
                 if(idPerfil != "" && idPerfil != idUsuarioLogado){
@@ -64,8 +63,6 @@ class HeaderFragment : Fragment() {
         }
 
         val botaoLogout = view.findViewById<ImageView>(R.id.logout)
-
-
 
         botaoLogout.setOnClickListener {
             shared.edit().remove("token").apply()

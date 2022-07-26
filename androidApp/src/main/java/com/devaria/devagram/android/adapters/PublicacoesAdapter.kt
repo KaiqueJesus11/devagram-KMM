@@ -1,4 +1,3 @@
-import android.R.attr.data
 import android.content.Context
 import android.text.Editable
 import android.text.TextWatcher
@@ -7,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
 import com.devaria.devagram.android.R
 import com.devaria.devagram.android.utils.Dialog
@@ -137,12 +137,11 @@ class PublicoesAdapter(context: Context?, publicacoes: ArrayList<Publicacao>) :
                             val erroData : ResponseErro = it.body()
                             Dialog(context).show("Erro", "Erro: ${erroData.erro}")
                         }else{
-                            runOnUiThread(Runnable {
+                            (context as AppCompatActivity).runOnUiThread {
                                 publicacao!!.comentarios.add(Comentario(idUsuarioLogado, nomeUsuarioLogado!!, novoComentario))
                                 adapter.notifyDataSetChanged()
-                                listView.invalidateViews()
                                 inputComentario.setText("")
-                            })
+                            }
                         }
                     }.onFailure {
                         Dialog(context).show("Erro", "Erro: ${it.localizedMessage}")
@@ -155,9 +154,6 @@ class PublicoesAdapter(context: Context?, publicacoes: ArrayList<Publicacao>) :
         return convertView
     }
 
-    private fun runOnUiThread(runnable: Runnable) {
-
-    }
 
 
 }
