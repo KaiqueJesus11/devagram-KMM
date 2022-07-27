@@ -1802,6 +1802,7 @@ int drawable design_ic_visibility 0x7f070068
 int drawable design_ic_visibility_off 0x7f070069
 int drawable design_password_eye 0x7f07006a
 int drawable design_snackbar_background 0x7f07006b
+int drawable editar_perfil_header_background 0x7f0700a7
 int drawable envelope 0x7f07006c
 int drawable footer_background 0x7f07006d
 int drawable header_background 0x7f07006e
@@ -1815,6 +1816,7 @@ int drawable ic_mtrl_chip_checked_circle 0x7f070075
 int drawable ic_mtrl_chip_close_circle 0x7f070076
 int drawable input_header_background 0x7f070077
 int drawable key 0x7f070078
+int drawable limpar 0x7f0700a8
 int drawable logo 0x7f070079
 int drawable logo_header 0x7f07007a
 int drawable logout 0x7f07007b
@@ -1940,6 +1942,7 @@ int id alertTitle 0x7f090048
 int id aligned 0x7f090049
 int id all 0x7f09004a
 int id allStates 0x7f09004b
+int id alterar_foto 0x7f090213
 int id always 0x7f09004c
 int id animateToEnd 0x7f09004d
 int id animateToStart 0x7f09004e
@@ -1952,6 +1955,7 @@ int id auto 0x7f090054
 int id autoComplete 0x7f090055
 int id autoCompleteToEnd 0x7f090056
 int id autoCompleteToStart 0x7f090057
+int id avancar 0x7f09021a
 int id avatar 0x7f090058
 int id avatar_input 0x7f090059
 int id barrier 0x7f09005a
@@ -1960,6 +1964,7 @@ int id beginOnFirstDraw 0x7f09005c
 int id beginning 0x7f09005d
 int id bestChoice 0x7f09005e
 int id blocking 0x7f09005f
+int id botao_alterar_foto 0x7f090214
 int id bottom 0x7f090060
 int id bounce 0x7f090061
 int id bounceBoth 0x7f090062
@@ -1969,6 +1974,8 @@ int id buttonPanel 0x7f090065
 int id cache_measures 0x7f090066
 int id cadastrar 0x7f090067
 int id cancel_button 0x7f090068
+int id cancelar 0x7f09020f
+int id cancelar_publicacao 0x7f09021b
 int id carryVelocity 0x7f090069
 int id center 0x7f09006a
 int id center_horizontal 0x7f09006b
@@ -1992,11 +1999,14 @@ int id closest 0x7f09007c
 int id collapseActionView 0x7f09007d
 int id comentario 0x7f09007e
 int id comentarios 0x7f09007f
+int id concluir 0x7f090210
 int id confirm_button 0x7f090080
 int id confirmar_senha 0x7f090081
 int id constraint 0x7f090082
 int id container 0x7f090083
+int id container_avatar 0x7f090215
 int id container_botao 0x7f090084
+int id container_editar_avatar 0x7f090216
 int id content 0x7f090085
 int id contentPanel 0x7f090086
 int id conteudo 0x7f090087
@@ -2046,6 +2056,7 @@ int id easeInOut 0x7f0900b2
 int id easeOut 0x7f0900b3
 int id east 0x7f0900b4
 int id edit_query 0x7f0900b5
+int id editar 0x7f090211
 int id elastic 0x7f0900b6
 int id email 0x7f0900b7
 int id end 0x7f0900b8
@@ -2058,7 +2069,7 @@ int id expanded_menu 0x7f0900be
 int id fade 0x7f0900bf
 int id fazer_cadastro 0x7f0900c0
 int id fazer_login 0x7f0900c1
-int id feedFragment 0x7f0900c2
+int id feed 0x7f09020e
 int id fill 0x7f0900c3
 int id fill_horizontal 0x7f0900c4
 int id fill_vertical 0x7f0900c5
@@ -2085,8 +2096,10 @@ int id groups 0x7f0900d9
 int id guideline 0x7f0900da
 int id header 0x7f0900db
 int id header_container 0x7f0900dc
+int id header_editar_perfil 0x7f090212
 int id header_home 0x7f0900dd
 int id header_nome 0x7f0900de
+int id header_nova_publicacao 0x7f09021c
 int id header_perfil_expecifico 0x7f0900df
 int id header_perfil_interno 0x7f0900e0
 int id header_perfil_interno_nome 0x7f0900e1
@@ -2108,6 +2121,7 @@ int id included 0x7f0900f0
 int id info 0x7f0900f1
 int id informacoes 0x7f0900f2
 int id input_container 0x7f0900f3
+int id input_editar_nome 0x7f090218
 int id interacoes 0x7f0900f4
 int id invisible 0x7f0900f5
 int id inward 0x7f0900f6
@@ -2121,6 +2135,7 @@ int id layout 0x7f0900fd
 int id left 0x7f0900fe
 int id leftToRight 0x7f0900ff
 int id legacy 0x7f090100
+int id limpar 0x7f090219
 int id line1 0x7f090101
 int id line3 0x7f090102
 int id linear 0x7f090103
@@ -2206,6 +2221,7 @@ int id north 0x7f090152
 int id notification_background 0x7f090153
 int id notification_main_column 0x7f090154
 int id notification_main_column_container 0x7f090155
+int id nova_publicacao 0x7f09021d
 int id novo_comentario 0x7f090156
 int id off 0x7f090157
 int id on 0x7f090158
@@ -2269,7 +2285,7 @@ int id search_voice_btn 0x7f090191
 int id seguidores 0x7f090192
 int id seguidores_container 0x7f090193
 int id seguindo 0x7f090194
-int id seguir 0x7f090195
+int id seguir_editar 0x7f09020d
 int id select_dialog_listview 0x7f090196
 int id selected 0x7f090197
 int id selection_type 0x7f090198
@@ -2476,6 +2492,7 @@ int layout design_navigation_menu 0x7f0c002c
 int layout design_navigation_menu_item 0x7f0c002d
 int layout design_text_input_end_icon 0x7f0c002e
 int layout design_text_input_start_icon 0x7f0c002f
+int layout fragment_editar_perfil 0x7f0c007a
 int layout fragment_feed 0x7f0c0030
 int layout fragment_header 0x7f0c0031
 int layout fragment_nova_publicacao 0x7f0c0032
@@ -2579,8 +2596,15 @@ int string abc_shareactionprovider_share_with 0x7f0e0018
 int string abc_shareactionprovider_share_with_application 0x7f0e0019
 int string abc_toolbar_collapse_description 0x7f0e001a
 int string appbar_scrolling_view_behavior 0x7f0e001b
+int string botao_alterar_foto 0x7f0e0082
+int string botao_avancar 0x7f0e0084
 int string botao_cadastrar 0x7f0e001c
+int string botao_cancelar 0x7f0e007f
+int string botao_concluir 0x7f0e0080
+int string botao_deixar_seguir 0x7f0e007a
+int string botao_editar 0x7f0e007b
 int string botao_login 0x7f0e001d
+int string botao_seguir 0x7f0e007c
 int string bottom_sheet_behavior 0x7f0e001e
 int string bottomsheet_action_expand_halfway 0x7f0e001f
 int string character_counter_content_description 0x7f0e0020
@@ -2589,11 +2613,11 @@ int string character_counter_pattern 0x7f0e0022
 int string chip_text 0x7f0e0023
 int string clear_text_end_icon_content_description 0x7f0e0024
 int string curtido_por 0x7f0e0025
+int string editar_perfil 0x7f0e0081
 int string error_icon_content_description 0x7f0e0026
 int string exposed_dropdown_menu_content_description 0x7f0e0027
 int string fab_transformation_scrim_behavior 0x7f0e0028
 int string fab_transformation_sheet_behavior 0x7f0e0029
-int string hello_blank_fragment 0x7f0e002a
 int string hide_bottom_view_on_scroll_behavior 0x7f0e002b
 int string icon_content_description 0x7f0e002c
 int string input_comentario 0x7f0e002d
@@ -2658,15 +2682,19 @@ int string mtrl_picker_toggle_to_calendar_input_mode 0x7f0e0067
 int string mtrl_picker_toggle_to_day_selection 0x7f0e0068
 int string mtrl_picker_toggle_to_text_input_mode 0x7f0e0069
 int string mtrl_picker_toggle_to_year_selection 0x7f0e006a
+int string nome 0x7f0e0083
+int string nova_publicacao 0x7f0e0085
 int string password_toggle_content_description 0x7f0e006b
 int string path_password_eye 0x7f0e006c
 int string path_password_eye_mask_strike_through 0x7f0e006d
 int string path_password_eye_mask_visible 0x7f0e006e
 int string path_password_strike_through 0x7f0e006f
 int string qtd_curtidas 0x7f0e0070
+int string rota_editar_perfil 0x7f0e007e
 int string rota_home 0x7f0e0071
 int string rota_nova_publicacao 0x7f0e0072
 int string rota_perfil 0x7f0e0073
+int string rota_perfil_expecifico 0x7f0e007d
 int string search_menu_title 0x7f0e0074
 int string status_bar_notification_info_overflow 0x7f0e0075
 int string text_faca_cadastro 0x7f0e0076
@@ -2906,6 +2934,8 @@ int style ButtonStyle 0x7f0f00e5
 int style CardView 0x7f0f00e6
 int style CardView_Dark 0x7f0f00e7
 int style CardView_Light 0x7f0f00e8
+int style EditarPerfilInputNomeStyle 0x7f0f02eb
+int style EditarPerfilLimparInputNomeStyle 0x7f0f02ec
 int style EmptyTheme 0x7f0f00e9
 int style FeedAvatarHeaderStyle 0x7f0f00ea
 int style FeedComentarioInputStyle 0x7f0f00eb

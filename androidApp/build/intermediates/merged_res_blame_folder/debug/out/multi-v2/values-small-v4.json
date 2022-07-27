@@ -4,7 +4,7 @@
             "outputFile": "com.devaria.devagram.android.androidApp-mergeDebugResources-18:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Devaria\\.gradle\\caches\\transforms-3\\179ea1fdc97195f86b78ee8aabb6e645\\transformed\\material-1.4.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "/Users/kaiquejesusdonascimento/.gradle/caches/transforms-3/179ea1fdc97195f86b78ee8aabb6e645/transformed/material-1.4.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

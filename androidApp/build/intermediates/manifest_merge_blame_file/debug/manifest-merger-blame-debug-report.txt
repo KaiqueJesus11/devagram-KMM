@@ -6,62 +6,62 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml
+8-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml
+9-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:5:5-65
-11-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:5:22-62
+11-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:5:5-65
+11-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:5:22-62
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:6:5-67
-12-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:6:22-64
+12-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:6:22-64
 13
 14    <application
-14-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:8:5-30:19
+14-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:8:5-30:19
 15        android:allowBackup="false"
-15-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:9:9-36
+15-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:9:9-36
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.5.0] C:\Users\Devaria\.gradle\caches\transforms-3\93b2c1d2475c926e9ed35b01b15bad15\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+16-->[androidx.core:core:1.5.0] /Users/kaiquejesusdonascimento/.gradle/caches/transforms-3/93b2c1d2475c926e9ed35b01b15bad15/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:supportsRtl="true"
-18-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:10:9-35
+18-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
-20-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:11:9-40
+20-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:11:9-40
 21        <activity
-21-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:12:9-14:40
+21-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:12:9-14:40
 22            android:name="com.devaria.devagram.android.activities.ContainerActivity"
-22-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:13:13-57
+22-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:13:13-57
 23            android:exported="false" />
-23-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:14:13-37
+23-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:14:13-37
 24        <activity
-24-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:15:9-17:40
+24-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:15:9-17:40
 25            android:name="com.devaria.devagram.android.activities.CadastroActivity"
-25-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:16:13-56
+25-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:16:13-56
 26            android:exported="false" />
-26-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:17:13-37
+26-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:17:13-37
 27        <activity
-27-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:18:9-20:40
+27-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:18:9-20:40
 28            android:name="com.devaria.devagram.android.activities.LoginActivity"
-28-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:19:13-53
+28-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:19:13-53
 29            android:exported="false" />
-29-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:20:13-37
+29-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:20:13-37
 30        <activity
-30-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:21:9-29:20
+30-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:21:9-29:20
 31            android:name="com.devaria.devagram.android.activities.MainActivity"
-31-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:22:13-52
+31-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:22:13-52
 32            android:exported="true" >
-32-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:23:13-36
+32-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:23:13-36
 33            <intent-filter>
-33-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:24:13-28:29
+33-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:24:13-28:29
 34                <action android:name="android.intent.action.MAIN" />
-34-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:25:17-69
-34-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:25:25-66
+34-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:25:17-69
+34-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:25:25-66
 35
 36                <category android:name="android.intent.category.LAUNCHER" />
-36-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:27:17-77
-36-->C:\projetos-git\devaria-aulas\2022\devagram-KMM\androidApp\src\main\AndroidManifest.xml:27:27-74
+36-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:27:17-77
+36-->/Users/kaiquejesusdonascimento/Documents/Verzel/Devaria Aulas/devagram-KMM/androidApp/src/main/AndroidManifest.xml:27:27-74
 37            </intent-filter>
 38        </activity>
 39    </application>

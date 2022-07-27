@@ -5,10 +5,18 @@
     android:layout_height="match_parent"
     tools:context=".fragments.NovaPublicacaoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Nova publicacao" />
+    <RelativeLayout
+        android:id="@+id/container_avatar"
+        style="@style/PerfilHeaderStyle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            style="@style/PerfilAvatarHeaderStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/avatar" />
+    </RelativeLayout>
 </FrameLayout>

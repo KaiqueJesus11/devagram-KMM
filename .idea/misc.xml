@@ -19,6 +19,20 @@
         <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/fragment_perfil.xml" value="0.5" />
         <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/item_comentario.xml" value="0.37373737373737376" />
         <entry key="..\:/projetos-git/devaria-aulas/2022/devagram-KMM/androidApp/src/main/res/layout/item_publicacao.xml" value="0.4444444444444444" />
+        <entry key="androidApp/src/main/res/drawable/botao_outline_perfil_background.xml" value="0.153" />
+        <entry key="androidApp/src/main/res/drawable/editar_perfil_header_background.xml" value="0.153" />
+        <entry key="androidApp/src/main/res/drawable/footer_background.xml" value="0.153" />
+        <entry key="androidApp/src/main/res/drawable/header_background.xml" value="0.153" />
+        <entry key="androidApp/src/main/res/drawable/input_header_background.xml" value="0.153" />
+        <entry key="androidApp/src/main/res/font/biennale.xml" value="0.2833333333333333" />
+        <entry key="androidApp/src/main/res/layout/activity_cadastro.xml" value="0.28229166666666666" />
+        <entry key="androidApp/src/main/res/layout/activity_container.xml" value="0.1" />
+        <entry key="androidApp/src/main/res/layout/activity_login.xml" value="0.28229166666666666" />
+        <entry key="androidApp/src/main/res/layout/fragment_editar_perfil.xml" value="0.1816741943359375" />
+        <entry key="androidApp/src/main/res/layout/fragment_feed.xml" value="0.1" />
+        <entry key="androidApp/src/main/res/layout/fragment_header.xml" value="0.28229166666666666" />
+        <entry key="androidApp/src/main/res/layout/fragment_nova_publicacao.xml" value="0.28229166666666666" />
+        <entry key="androidApp/src/main/res/layout/fragment_perfil.xml" value="0.13229166666666667" />
       </map>
     </option>
   </component>

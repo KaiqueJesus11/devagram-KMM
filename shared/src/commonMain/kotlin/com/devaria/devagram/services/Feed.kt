@@ -5,7 +5,7 @@ import io.ktor.client.statement.*
 
 class Feed {
     suspend fun getFeed(token: String, id : String? = ""): HttpResponse {
-        if(id != ""){
+        if(id != "" && id != null){
             return DevagramApiService().get("feed?id=$id", token)
         }
         return DevagramApiService().get("feed", token)
